@@ -53,5 +53,5 @@ A important point to note is that the predictions are made on top of the train d
 
 Because DeepAR returns 100 samples for each time step (this can be set to different value), we need to take the mean of the predictions to get the most likely value. The cool thing is that we can also create uncertainty intervals for the predictions. In this template I used the 20th and 80th percentiles of the samples. At the end we merge the predictions, the interval bound and the real values to measure accuracy achivied from the model. Also, all negative values and NAN values were set to zero.
 
-
+*If package mxnet does not install, downgrade numpy to numpy==1.23.5 and install mxnet throught 'pip install mxnet -f https://dist.mxnet.io/python/cpu'
 
